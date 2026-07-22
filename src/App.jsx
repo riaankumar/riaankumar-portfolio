@@ -79,13 +79,24 @@ function FootballIcon() {
   return (
     <svg
       className="personal-ball"
-      viewBox="0 0 24 24"
+      viewBox="0 0 32 32"
       aria-hidden="true"
       focusable="false"
     >
-      <circle cx="12" cy="12" r="9.25" />
-      <path d="m12 7 3.2 2.3-1.2 3.8h-4l-1.2-3.8L12 7Z" />
-      <path d="m12 7 .2-4.2M15.2 9.3l4-1.2M14 13.1l2.6 3.4M10 13.1l-2.6 3.4M8.8 9.3l-4-1.2M16.6 16.5l.8 3.5M7.4 16.5 6.6 20" />
+      <circle className="ball-shell" cx="16" cy="16" r="14" />
+      <g className="ball-stitching">
+        <path d="m16 8.3-4.4 3.2 1.7 5.2h5.4l1.7-5.2L16 8.3Z" />
+        <path d="m16 8.3-3.7-4.8M20.4 11.5l5.6-2M18.7 16.7l3.5 4.8M13.3 16.7l-3.5 4.8M11.6 11.5 6 9.5" />
+        <path d="m12.3 3.5-4.7.9L6 9.5l3.8 2.8M26 9.5l-1.6-5.1-4.7-.9-3.7 4.8M22.2 21.5l4.7.1 2-4.5-2.9-7.6M9.8 21.5l-4.7.1-2-4.5L6 9.5M22.2 21.5l-1.6 5.4M9.8 21.5l1.6 5.4" />
+      </g>
+      <g className="ball-panels">
+        <path d="m16 8.3-4.4 3.2 1.7 5.2h5.4l1.7-5.2L16 8.3Z" />
+        <path d="M12.3 3.5A14 14 0 0 1 19.7 3.5L16 8.3l-3.7-4.8Z" />
+        <path d="M26 9.5a14 14 0 0 1 2.9 7.6l-4.5-1.4-2.2-4.6L26 9.5Z" />
+        <path d="m26.9 21.6-4.7-.1-3.1 4.1 1.5 1.3a14 14 0 0 0 6.3-5.3Z" />
+        <path d="m5.1 21.6 4.7-.1 3.1 4.1-1.5 1.3a14 14 0 0 1-6.3-5.3Z" />
+        <path d="M6 9.5a14 14 0 0 0-2.9 7.6l4.5-1.4 2.2-4.6L6 9.5Z" />
+      </g>
     </svg>
   );
 }
@@ -141,9 +152,7 @@ function HomePage() {
       <h1>riaan kumar</h1>
       <p className="one-line personal-line">
         <FootballIcon />
-        <span>
-          player, drone pilot, linguaphile, omnist, and poker degen ;)
-        </span>
+        <span>player, drone pilot, linguaphile, and omnist.</span>
       </p>
 
       <section className="bio-section" aria-label="Bio">

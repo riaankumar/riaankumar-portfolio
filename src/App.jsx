@@ -4,8 +4,8 @@ import instagramIcon from "../assets/icons/instagram.svg";
 import linkedinIcon from "../assets/icons/linkedin.svg";
 
 const currentWork = [
-  "building kritikos",
-  "researching multimodal learning agents for enterprises",
+  "connecting data owners with ai teams",
+  "writing about data, human expertise, and how models learn",
   "founding gtm engineer @ memorang",
   "studying data science + economics @ uc berkeley",
 ];
@@ -157,8 +157,9 @@ function HomePage() {
 
       <section className="bio-section" aria-label="Bio">
         <p>
-          i like turning messy workflows into useful products, visions, and
-          go-to-market strategies for teams and individuals.
+          i broker data for ai and write about what makes it valuable. i'm
+          interested in the knowledge that exists in the world but hasn't made
+          it into a model.
         </p>
       </section>
 
